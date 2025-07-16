@@ -1,0 +1,51 @@
+[2025-07-10]
+Entry: Had a lots of carrot and cucumber, did my affirmations, finished off my iitm assignments, completed a DA, walked 6k steps.
+Labels: Nutrition, Education, Soul, Exercise
+
+[2025-07-11]
+Entry: 200 hula-hoop rounds, met friends for lunch, drank warm tea.
+Labels: Exercise, Social , Soul
+
+[2025-07-12]
+Entry: Put away laundry, washed my skirt, walked 7k steps, helped a friend move her luggage, went to the temple.
+Labels: Chores, Exercise, Social , Soul
+
+[2025-07-13]
+Entry: walked 10k steps , completed my DA, folded clothes.
+Labels: Exercise, Education, Chores
+
+[2025-07-14]
+Entry: studied for quiz, cleaned room, worked on BDM project.
+Labels: Education, Chores , Education
+
+[2025-07-15]
+Entry: wrote notes for dbms, got juice with friend, wrote quiz-1 exam.
+Labels: Education, Social , Education
+
+[2025-07-16]
+Entry: Hung out with friends, worked on my self-branding by talking to a teacher about what I'm working on.
+Labels: Social , Soul
+
+[2025-07-17]
+Entry: Put eye patches, worked on mini self project, worked on hackathon project.
+Labels: Soul , Projects , Projects
+
+[2025-07-18]
+Entry: Made more creative stickers for my laptop, got cold coffee , took a nap.
+Labels: Soul , Soul , Soul
+
+[2025-07-19]
+Entry: walked around listening to music
+Labels: Soul , Exercise
+
+[2025-07-20]
+Entry: studied for my exam, took DBMS notes, revised 3 units of OOP
+Labels: Education, Education, Education
+
+[2025-07-21]
+Entry: read a textbook, completed my college course video, did an online quiz
+Labels: Education, Education, Education
+
+[2025-07-22]
+Entry: revised lecture notes and wrote formulas down
+Labels: Education

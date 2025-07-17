@@ -1,11 +1,12 @@
-from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassification, Trainer, TrainingArguments
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.multiclass import OneVsRestClassifier
 from sklearn.preprocessing import MultiLabelBinarizer
-from torch.utils.data import Dataset
-import torch, os, json
+import joblib
+import os
 
 LABELS = ["Nutrition", "Education", "Soul", "Exercise", "Social", "Chores", "Projects"]
 
-# Load data
 def load_data(path):
     entries, labels = [], []
     with open(path, "r") as f:
@@ -24,52 +25,18 @@ entries, label_lists = load_data("journal training set.txt")
 mlb = MultiLabelBinarizer(classes=LABELS)
 y = mlb.fit_transform(label_lists)
 
-# Tokenize entries
-tokenizer = DistilBertTokenizerFast.from_pretrained("distilbert-base-uncased")
-X = tokenizer(entries, padding=True, truncation=True, return_tensors="pt")
+# Vectorize entries
+vectorizer = TfidfVectorizer(ngram_range=(1, 2), max_features=1000)
+X = vectorizer.fit_transform(entries)
 
-# Dataset
-class JournalDataset(Dataset):
-    def __init__(self, encodings, labels):
-        self.encodings = encodings
-        self.labels = torch.tensor(labels, dtype=torch.float32)
+# Train model
+model = OneVsRestClassifier(LogisticRegression(solver="liblinear"))
+model.fit(X, y)
 
-    def __getitem__(self, idx):
-        item = {k: v[idx] for k, v in self.encodings.items()}
-        item["labels"] = self.labels[idx]
-        return item
+# Save everything
+os.makedirs("model_out", exist_ok=True)
+joblib.dump(model, "model_out/sk_model.pkl")
+joblib.dump(vectorizer, "model_out/vectorizer.pkl")
+joblib.dump(mlb, "model_out/label_binarizer.pkl")
 
-    def __len__(self):
-        return len(self.labels)
-
-dataset = JournalDataset(X, y)
-
-# Model
-model = DistilBertForSequenceClassification.from_pretrained(
-    "distilbert-base-uncased", num_labels=len(LABELS), problem_type="multi_label_classification"
-)
-
-# Training args
-args = TrainingArguments(
-    output_dir="./model_out",
-    per_device_train_batch_size=4,
-    num_train_epochs=10,
-    logging_dir="./logs",
-    logging_steps=10,
-    save_strategy="epoch"
-)
-
-trainer = Trainer(
-    model=model,
-    args=args,
-    train_dataset=dataset,
-    tokenizer=tokenizer
-)
-
-trainer.train()
-
-# Save model + tokenizer + label encoder
-model.save_pretrained("model_out")
-tokenizer.save_pretrained("model_out")
-with open("model_out/labels.json", "w") as f:
-    json.dump(mlb.classes_.tolist(), f)
+print(" Model, vectorizer, and label encoder saved to model_out/")

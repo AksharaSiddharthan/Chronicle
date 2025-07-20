@@ -7,7 +7,7 @@ Frontend
 
 * **React**: Core library for building responsive user interfaces
 * **Tailwind CSS**: Utility-first styling for a clean, consistent UI
-* **Recharts**: For visualizing category distribution using pie charts
+* **Recharts**: For visualising category distribution using pie charts
 * **react-calendar**: Calendar component for filtering entries by date
 * **Fetch API**: Used to communicate with the FastAPI backend
 
@@ -21,9 +21,9 @@ Backend
 
 Machine Learning
 
-* **Hugging Face Transformers** (e.g., BERT or DistilBERT): NLP model used to classify journal entries into categories like Nutrition, Exercise, Soul, etc.
+* **Hugging Face Transformers**: NLP model used to classify journal entries into categories like Nutrition, Exercise, Soul, etc.
 * **scikit-learn**: Assists with preprocessing and evaluation
-* **safetensors**: Used for efficient and secure model serialization
+* **safetensors**: Used for efficient and secure model serialisation
 
 
 

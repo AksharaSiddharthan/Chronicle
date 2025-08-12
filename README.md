@@ -1,6 +1,25 @@
 # Chronicle
 Tech Stack
+Chronicle is a digital journaling and self-assessment app that lets you log daily activities like journal entries and automatically generates insights about your performance in different areas of life. Instead of just keeping notes, Chronicle structures your reflections into measurable categories — helping you visualise your growth over time.
 
+
+**Features**
+Daily Journal Logging – Write free-form entries about your day, events, and thoughts.
+Category-Based Tracking – Rate or tag your activities in areas such as:
+Health & Fitness
+Learning & Skills
+Work & Productivity
+Social & Relationships
+Creativity & Hobbies
+Mindset & Wellbeing
+Automated Analysis – Summarises how you’ve been doing in each category based on your logs.
+Data Visualisation – Provides weekly or monthly charts of your performance.
+Search & Filter – Find past entries by category, date, or keyword.
+Export & Backup – Save your data securely in JSON or CSV format.
+
+-------
+
+# Tech Stack
 This project uses a modern full-stack architecture combining React, FastAPI, and a fine-tuned NLP model for intelligent journal entry classification.
 
 Frontend
@@ -21,7 +40,7 @@ Backend
 
 Machine Learning
 
-* **Hugging Face Transformers**: NLP model used to classify journal entries into categories like Nutrition, Exercise, Soul, etc.
+* **Hugging Face Transformers**: The NLP model is used to classify journal entries like Nutrition, Exercise, Soul, etc.
 * **scikit-learn**: Assists with preprocessing and evaluation
 * **safetensors**: Used for efficient and secure model serialisation
 

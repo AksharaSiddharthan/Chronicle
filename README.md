@@ -6,16 +6,16 @@ Chronicle is a digital journaling and self-assessment app that lets you log dail
 **Features**
 Daily Journal Logging – Write free-form entries about your day, events, and thoughts. <br>
 Category-Based Tracking – Rate or tag your activities in areas such as: <br>
-Health & Fitness <br>
-Learning & Skills<br>
-Work & Productivity<br>
-Social & Relationships<br>
-Creativity & Hobbies<br>
-Mindset & Wellbeing<br>
-Automated Analysis – Summarises how you’ve been doing in each category based on your logs.<br>
-Data Visualisation – Provides weekly or monthly charts of your performance.<br>
-Search & Filter – Find past entries by category, date, or keyword.<br>
-Export & Backup – Save your data securely in JSON or CSV format.<br>
+*Health & Fitness <br>
+*Learning & Skills<br>
+*Work & Productivity<br>
+*Social & Relationships<br>
+*Creativity & Hobbies<br>
+*Mindset & Wellbeing<br>
+*Automated Analysis – Summarises how you’ve been doing in each category based on your logs.<br>
+*Data Visualisation – Provides weekly or monthly charts of your performance.<br>
+*Search & Filter – Find past entries by category, date, or keyword.<br>
+*Export & Backup – Save your data securely in JSON or CSV format.<br>
 
 -------
 

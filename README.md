@@ -1,6 +1,6 @@
 # Chronicle
 
-Chronicle is a **digital journaling and self-assessment app** that helps you log daily activities and gain insights into different areas of life. It goes beyond simple notes by structuring reflections into measurable categories, letting you **track growth and visualize progress over time**.
+Chronicle is a **digital journaling and self-assessment app** that helps you log daily activities and gain insights into different areas of life. It goes beyond simple notes by structuring reflections into measurable categories, letting you **track growth and visualise progress over time**. Inspired by the viral PAID track your life templates, I decided to make my own and make it personalized by allowing a journal entry style input.
 
 ---
 

@@ -17,9 +17,9 @@ Chronicle is a **digital journaling and self-assessment app** that helps you log
 
 ## Tech Stack
 
-**Frontend:** React · Tailwind CSS · Recharts · react-calendar · Fetch API
-**Backend:** FastAPI · Uvicorn · Pydantic · SQLAlchemy · SQLite
-**Machine Learning:** Hugging Face Transformers · scikit-learn · safetensors
+* **Frontend:** React · Tailwind CSS · Recharts · react-calendar · Fetch API
+* **Backend:** FastAPI · Uvicorn · Pydantic · SQLAlchemy · SQLite
+* **Machine Learning:** Hugging Face Transformers · scikit-learn · safetensors
 
 ---
 
